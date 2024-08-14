@@ -1,0 +1,153 @@
+/* ## NAVBAR and BODY ## */
+
+a { /* Affecting the text within the list */ 
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 2rem 1rem;
+}
+
+a:hover {
+    background-color: #4f504f;
+}
+
+body { /* place whole page to edges and changed font of body*/
+    font-family: arial;
+    margin: 0; /* spread to edges */
+    padding: 0; /* spread to edges */
+}
+
+li {
+    list-style: none;    /* took out bullet points*/ 
+}
+
+#navbar { /* fixing to the top with gradient to stand out */
+    background-image: linear-gradient(125deg, #2a2b2a 0%, #000000 100%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#nav-list { /* Text of the list, being overridden by the a tag*/ 
+    display: flex;
+    flex-direction: row;
+    font-family: sans-serif;
+    font-size: 2rem;
+    color: white;
+}
+
+#welcome-section {
+    width: 100%;
+    /* height: 75vh; */
+    height: auto; /* Fixed forced scaling issue */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #464222;
+    background-image: linear-gradient(-125deg, #0a0f00 0%, #f5f5f4 100%);
+  }
+  
+/* ## WELCOME GRID ## */ 
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.personal-image-1 {
+    padding-top: 200px ; /* top, right, bottom, left */
+    width: auto;
+    height: auto;
+}
+
+#welcome-section > p {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+/* ## PROJECTS ##*/
+
+/* h2 for the projects area*/
+.projects > h2 {
+    color: black;
+    font-size: 4rem;
+}
+
+/*general projects class*/
+.projects {
+    background-image: linear-gradient(-225deg, #0a0f00 0%, #f5f5f4 75%);
+    padding: 4rem 2rem; /* (top-bottom, left-right) padding for borders*/
+    margin: 0;
+    text-align: center;
+}
+
+/* handling project image */
+.project-image {
+    /* height: calc(100% - 5.8rem); */
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Tile */ 
+.project-title {
+    color: black;
+    width: 100%;
+    background-color: 0;
+    margin: 0;
+    padding: 2rem 0;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 850;
+}
+
+.project-summary {
+    display: flex;
+    justify-content: center;
+    color: #000000;
+    font-weight: 800;
+}
+
+/* project grid */
+.projects-grid-square {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 5rem;
+    width: 100%;
+    /* min-width: 1280px; (causing width issue, should be max)  */
+    max-width: 1280px; 
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+
+/* ## PROFILE LINKS ## */
+
+.profile-link {
+    background-image: linear-gradient(-45deg, #1d1c1c 0%, #d4d4d4 75%);
+    margin: 0;
+    padding: 4rem 2rem;
+}
+
+.contact-header > h2{
+    color: black;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.contact-tiles {
+    color: black;
+    font-family: sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-image {
+    width: 50px;
+    border-radius: 9px; /* More circular icon */
+}
